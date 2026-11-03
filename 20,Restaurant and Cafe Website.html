@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant and Cafe</title>
+    <style>
+        body {
+            font-family: Georgia;
+            margin: 0;
+            background-color: #fff5e6;
+            color: #333;
+        }
+
+        header {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: red;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        section {
+            padding: 25px;
+            text-align: center;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        .menu, .chef {
+            display: inline-block;
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            max-width: 350px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: RED;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .menu, .chef {
+                width: 80%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="bgvideo">
+    <source src="inside.mp4" type="video/mp4">
+</video>
+
+<header>
+    <h1>CAFE TOEQUE</h1>
+    <p>Delicious Food | Beautiful Moments</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#chefs">Chefs</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#booking">Reservation</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Our Restaurant</h2>
+    <img src="torque.png" alt="Restaurant Ambience" style="width:80%;height:250px;">
+    <p>Enjoy delicious food in a beautiful and peaceful atmosphere.</p>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_4aGn1VO584EPbMq-rpavYLrYDRt71DqO9uQioHpGyQ&s=10" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>₹250</p>
+    </div>
+
+    <div class="menu">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfgnNyMv_J4URaKx24m0kaeazwzsxfmhgEPG5c_w6_Yg&s=10" alt="Burger">
+        <h3>Burger</h3>
+        <p>₹150</p>
+    </div>
+
+    <div class="menu">
+        <img src="https://cdn.dotpe.in/longtail/store-items/6655963/0hMnmFQA.jpeg" alt="Coffee">
+        <h3>Coffee</h3>
+        <p>₹100</p>
+    </div>
+</section>
+
+<section id="chefs">
+    <h2>Our Expert Chefs</h2>
+
+    <div class="chef">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUmkWM43yiKBgpRv9jUmogIw-a0STRpWQ5IgHqRRLYlWFyKCrGiJ7GMA&s=10" alt="Chef John">
+        <h3>Chef John</h3>
+        <p>Italian Food Specialist</p>
+    </div>
+
+    <div class="chef">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9x1fa6zvVpMuEoh_4_JGkOPBqPLzKORFT8rt2eE2FWd-n3YfYbKwtsP8&s=10" alt="Chef David">
+        <h3>Chef David</h3>
+        <p>Continental Chef</p>
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+    <p>"Amazing food and excellent service!"</p>
+    <p>"Beautiful ambience and friendly staff."</p>
+</section>
+
+<section>
+    <h2>Opening Hours</h2>
+    <p>Monday - Friday: 10 AM - 10 PM</p>
+    <p>Saturday - Sunday: 9 AM - 11 PM</p>
+
+    <h2>Our Location</h2>
+    <p>Hyderabad, Telangana, India</p>
+</section>
+
+<section id="booking">
+    <h2>Table Reservation</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="date" required>
+        <input type="time" required>
+        <select required>
+            <option value="">Number of Guests</option>
+            <option>1 Person</option>
+            <option>2 People</option>
+            <option>3 People</option>
+            <option>4 People</option>
+            <option>5 People</option>
+        </select>
+        <button type="submit">Book Table</button>
+    </form>
+</section>
+</body>
+</html>
